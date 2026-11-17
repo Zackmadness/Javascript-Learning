@@ -80,3 +80,34 @@ console.log(typeof myNum);
 const myNum2 = 123;
 const myString2 = String(myNum2);
 console.log(typeof myString2);
+
+
+function add7(num) {
+  return num + 7;
+}
+
+const ten = 10;
+console.log(add7(ten));
+
+function multiply(a, b){
+  return a * b;
+}
+
+const result  = multiply(3, 2);
+console.log(result)
+
+function capitalize(str) {
+  if (!str) return ""; 
+  return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
+console.log(capitalize("abcd")); 
+console.log(capitalize("ABCD")); 
+console.log(capitalize("aBcD")); 
+
+
+
+function lastLetter(str) {
+  return str.slice(-1);
+}
+
+console.log(lastLetter("abcd")); 
